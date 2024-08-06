@@ -1,0 +1,29 @@
+@import "../../../../assets/scss/index.scss";
+.subscribe-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+
+  .heading {
+    text-transform: capitalize;
+    margin-top: 40px;
+  }
+
+  p {
+    margin-top: 20px;
+    color: #b7b7b7;
+    text-transform: capitalize;
+  }
+
+  input {
+    width: 85%;
+    height: 60px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 3px solid $primary-color;
+    overflow: auto;
+    position: relative;
+  }
+}

@@ -1,0 +1,38 @@
+.footer-linklist {
+  list-style: none;
+  padding: 0;
+
+  &__item {
+    position: relative;
+    display: block;
+    margin-bottom: 12px;
+    width: 100%;
+    line-height: 1.5;
+    text-align: left;
+    transition: all 0.2s ease-in-out;
+  }
+
+  &__item::before {
+    position: absolute;
+    content: "";
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    top: calc(50% - 3px);
+    left: 0;
+    border-radius: 100%;
+    background: #5c5c5c;
+    opacity: 0;
+    transition: opacity 0.1s ease-in-out;
+  }
+}
+
+.footer-link:hover {
+  font-family: "JosefinSansSemiBold";
+}
+
+@media screen and (max-width: 769px) {
+  .footer-linklist__item {
+    text-align: center;
+  }
+}

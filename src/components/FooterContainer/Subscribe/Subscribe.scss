@@ -1,0 +1,29 @@
+@import "../../../assets/scss/index.scss";
+
+.footer-form {
+  width: 100%;
+  display: block;
+  margin-top: 18px;
+}
+
+.footer-form > * {
+  margin-top: 20px;
+}
+
+.footer-form__input {
+  @include forminputs;
+  max-width: 350px;
+}
+
+.footer-form__button {
+  display: block;
+  max-width: 350px;
+}
+
+@media screen and (max-width: 769px) {
+  .footer-form > * {
+    text-align: center;
+    margin: 20px auto;
+    max-width: 300px;
+  }
+}

@@ -1,0 +1,48 @@
+//First Child
+
+@import "../../../assets/scss/index.scss";
+
+.footer__icons {
+  margin-top: 5px;
+  margin-left: -14px;
+  margin-right: -14px;
+  list-style: none;
+}
+
+.footer-text {
+  padding-top: 10px;
+}
+
+@media screen and (min-width: 641px) {
+  .footer__icons {
+    margin-top: 14px;
+  }
+}
+
+.footer__icons--item {
+  display: inline-block;
+  margin: 6px 8px 6px 8px;
+}
+
+.icon-link {
+  color: $secondary-active-color;
+}
+
+.icon-link:hover {
+  color: $primary-active-color;
+}
+
+.icon-wrapper {
+  @include iconWrapper;
+}
+
+.icon-wrapper::before {
+  @include iconWrapperBefore;
+}
+.icon {
+  @include icon;
+}
+
+.font-bold {
+  font-family: "JosefinSansSemiBold";
+}

@@ -1,0 +1,109 @@
+// @import url("https://fonts.googleapis.com/css2?family=Fontdiner+Swanky&family=Roboto:wght@500&display=swap");
+
+// $lime: #c5dc50;
+// $rasp: #f36a6f;
+// $seed: #383838;
+// $blue:rgba(47, 0, 255, 0.842);
+// $sm: 1rem;
+// $md: 2.5rem;
+// $lg: 4rem;
+
+// * {
+//   box-sizing: 0;
+//   margin: 0;
+//   padding: 0;
+// //   cursor: url("../../assets/image/cursors-edge.png"), auto;
+// }
+
+// .page404,.page500 {
+//   display: flex;
+//   flex-flow: row;
+//   flex-wrap: nowrap;
+//   align-items: center;
+//   width: 100%;
+//   // background: linear-gradient(to right, white 50%, $seed 50%);
+//   font-family: "Roboto", sans-serif;
+//   font-size: 18px;
+//   font-weight: 500;
+//   line-height: 1.5;
+//   color: white;
+
+//   &__image {
+//     // background-image: url("../../../assets/image/BANNER.svg");
+//     // background-position: top right;
+//     // background-repeat: no-repeat;
+//     background-size: 50px 100%;
+//     width: 50%;
+//     height: 100vh;
+//     &--img {
+//       display: block;
+//       height: auto;
+//       margin: 100px auto;
+//       width: 90%;
+//     }
+//   }
+
+//   &__container {
+//     width: 50%;
+//     text-align: center;
+//     &__head {
+//       font-family: "Fontdiner Swanky", cursive;
+//       font-size: $lg;
+//       color: $lime;
+//       margin-bottom: $sm;
+//     }
+//     &__desc {
+//       margin-bottom: $md;
+//       &--text {
+//         font-style: italic;
+//         color: $lime;
+//       }
+//     }
+//     &__button {
+//       font-family: "Fontdiner Swanky", cursive;
+//       font-size: $sm;
+//       color: $seed;
+//       border: none;
+//       background-color: $lime;
+//       padding: $sm $md;
+//       transform: skew(-5deg);
+//       transition: all 0.1s ease;
+//     }
+//   }
+// }
+
+.error-container {
+  background: #aa7722 url("../../../assets/image/BANNER.svg") no-repeat;
+  background-size: cover;
+  background-position: center bottom;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  overflow-x: hidden;
+  padding: 0;
+  margin: 0 auto;
+}
+
+.error-container-wrapper {
+  margin: auto;
+  color: #fff;
+  text-align: center;
+  display: flex;
+  flex-flow: column;
+  height: inherit;
+  justify-content: center;
+  align-items: center;
+}
+
+.error-head {
+  font-weight: 500;
+  margin-bottom: 0;
+}
+
+.error-text {
+  margin-top: 0;
+}
+
+.ErrorBtn {
+  margin: 30px 0;
+}

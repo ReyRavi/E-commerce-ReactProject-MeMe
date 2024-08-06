@@ -1,0 +1,71 @@
+.lcontainer {
+  display: flex;
+  flex-flow: row;
+  background-color: white;
+  min-width: 100%;
+  min-height: 85vh;
+
+  &__leftview {
+    min-width: 20%;
+    background-repeat: no-repeat;
+  }
+  &__centerview {
+    min-width: 40%;
+    background-repeat: no-repeat;
+  }
+  &__rightview {
+    min-width: 40%;
+  }
+}
+
+@mixin lcontainer($name, $bgImageleft, $bgImage) {
+  .#{$name} {
+    background-color: white;
+    .lcontainer {
+      &__leftview {
+        background-image: $bgImageleft;
+      }
+      &__centerview {
+        background-image: $bgImage;
+      }
+    }
+  }
+}
+
+@include lcontainer(
+  log,
+  url("../../../assets/image/accounts/left.svg"),
+  url("../../../assets/image/accounts/login.svg")
+);
+@include lcontainer(
+  reg,
+  url("../../../assets/image/accounts/left.svg"),
+  url("../../../assets/image/accounts/register.svg")
+);
+@include lcontainer(
+  OTP,
+  url("../../../assets/image/accounts/left.svg"),
+  url("../../../assets/image/accounts/otp.svg")
+);
+
+@media screen and (max-width: 1200px) {
+  .lcontainer {
+    justify-content: center;
+    margin-top: 40px;
+    &__leftview {
+      display: none;
+    }
+    &__centerview {
+      display: none;
+    }
+    &__rightview {
+      min-width: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .lcontainer {
+    margin-top: 0px ;
+  }
+}

@@ -1,0 +1,109 @@
+@import "../../../assets/scss/index.scss";
+
+.preorder-area {
+  padding: 60px 0;
+}
+
+.preorder-container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.preorder-row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.preorder-header,
+.preorder-wrapper {
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+@media (min-width: 576px) {
+  .preorder-container {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .preorder-container {
+    max-width: 720px;
+  }
+  .preorder-header {
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .preorder-wrapper {
+    -ms-flex: 0 0 33.333333%;
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+  }
+}
+
+@media (min-width: 992px) {
+  .preorder-container {
+    max-width: 960px;
+  }
+  .empty-preorder {
+    margin-top: 80px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .preorder-container {
+    max-width: 1200px;
+  }
+}
+
+.preorder-heading {
+  text-align: center !important;
+  color: $primary-color;
+  margin-bottom: 60px;
+  overflow: hidden;
+  margin-top: -5px;
+}
+
+.preorder-heading h2 {
+  display: block;
+  font-family: "JosefinSansBold";
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.preorder-heading h4 {
+  display: inline-block;
+  padding-bottom: 20px;
+  position: relative;
+  text-transform: capitalize;
+  z-index: 1;
+}
+
+@keyframes marquee {
+  0% {
+    margin-left: 100%;
+    transform: translateX(0%);
+  }
+  100% {
+    margin-left: 0;
+    transform: translateX(-100%);
+  }
+}
+
+.marquee {
+  animation: marquee 7s linear infinite;
+  display: inline-block;
+  white-space: nowrap;
+  &:hover {
+    animation-play-state: paused;
+  }
+}

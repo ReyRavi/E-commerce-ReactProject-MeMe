@@ -1,0 +1,212 @@
+@import "../../../../../assets/scss/index.scss";
+
+.flickity-prev-next-button {
+  position: absolute !important;
+}
+.flickity-prev-next-button[disabled] {
+  opacity: 0;
+}
+.flickity-prev-next-button svg {
+  width: auto;
+  height: 18px;
+  stroke-width: 1.5px;
+  stroke: currentColor;
+}
+
+.Button--full {
+  width: 100%;
+}
+
+.Section--spacingNormal {
+  margin: 50px 0;
+}
+
+.shopify-section--bordered > .Section--spacingNormal {
+  padding: 50px 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.shopify-section--bordered > .Section--spacingExtraLarge,
+.shopify-section--bordered > .Section--spacingLarge {
+  padding: 90px 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.SectionHeader:not(:only-child) {
+  margin-bottom: 40px;
+}
+.SectionHeader--center {
+  text-align: center;
+}
+.SectionHeader__Heading.SectionHeader__Heading,
+.SectionHeader__SubHeading.SectionHeader__SubHeading {
+  margin-top: -0.325em;
+}
+
+.Carousel__Header {
+  font-family: "JosefinSansSemiBold";
+  color: #5c5c5c;
+}
+
+.CarouselFooter {
+  margin-top: 30px;
+  text-align: center;
+}
+
+@media screen and (min-width: 1008px) {
+  .Section--spacingNormal {
+    margin: 80px 0;
+  }
+
+  .shopify-section--bordered > .Section--spacingNormal {
+    padding: 80px 0;
+  }
+
+  .SectionHeader:not(:only-child) {
+    margin-bottom: 70px;
+  }
+
+  .slider--button {
+    padding: 13px 60px;
+  }
+
+  .CarouselFooter {
+    margin-top: 60px;
+  }
+}
+
+.ProductItem {
+  text-align: center;
+  white-space: normal;
+}
+.js .ProductList--grid .ProductItem {
+  visibility: hidden;
+}
+.ProductItem__Wrapper {
+  position: relative;
+}
+.ProductItem__ImageWrapper {
+  display: block;
+}
+.ProductItem__Image--alternate {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0 !important;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-object-position: center;
+  object-position: center;
+}
+
+.ProductItem__Info {
+  margin-top: 20px;
+  font-family: "JosefinSansRegular" !important;
+  // font-size: 14px;
+}
+.ProductItem__Info--left {
+  text-align: left;
+}
+.ProductItem__Info--right {
+  text-align: right;
+}
+.ProductItem__Title {
+  display: block;
+  margin-bottom: 4px;
+  text-transform: lowercase;
+}
+
+.ProductItem__Title::first-letter {
+  text-transform: uppercase;
+}
+
+@media (-moz-touch-enabled: 1), (hover: none) {
+  .ProductItem__Image--alternate {
+    display: none;
+  }
+}
+@media screen and (min-width: 641px) {
+  .ProductItem__Label {
+    font-size: 13px;
+  }
+  .ProductItem__Info {
+    // font-size: 15px;
+  }
+}
+
+.ProductList--carousel .Carousel__Cell {
+  width: 62%;
+  padding: 0 12px;
+  vertical-align: top;
+}
+
+@media screen and (max-width: 1007px) {
+  .ProductListWrapper {
+    overflow: hidden;
+  }
+  .ProductList--carousel {
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+    padding-bottom: 30px;
+    margin-bottom: -30px;
+  }
+  .ProductList--carousel .Carousel__Cell {
+    display: inline-block !important;
+  }
+  .ProductList--carousel .Carousel__Cell:first-child {
+    margin-left: 19%;
+  }
+  .ProductList--carousel .Carousel__Cell:last-child {
+    margin-right: 19%;
+  }
+}
+@media screen and (min-width: 641px) and (max-width: 1007px) {
+  .ProductList--carousel .Carousel__Cell {
+    width: 48%;
+    padding: 0 15px;
+  }
+  .ProductList--carousel .Carousel__Cell:first-child {
+    margin-left: 26%;
+  }
+  .ProductList--carousel .Carousel__Cell:last-child {
+    margin-right: 26%;
+  }
+}
+@media screen and (min-width: 1008px) {
+  .ProductList--carousel {
+    margin: 0 90px;
+  }
+  .ProductList--carousel::after {
+    content: "flickity";
+    display: none;
+  }
+  .ProductList--carousel .Carousel__Cell {
+    width: 33.3333%;
+    left: 0;
+    padding: 0 10px;
+    margin-left: 0;
+  }
+  .ProductList--carousel .flickity-prev-next-button {
+    top: calc(50% - 45px);
+    width: 45px;
+    height: 45px;
+    stroke-width: 1px;
+  }
+  .ProductList--carousel .flickity-prev-next-button.next {
+    right: -50px;
+  }
+  .ProductList--carousel .flickity-prev-next-button.previous {
+    left: -50px;
+  }
+}
+@media screen and (min-width: 1240px) {
+  .ProductList--carousel .Carousel__Cell {
+    width: 25%;
+  }
+}
+
+.shopify-section--bordered + .shopify-section--bordered {
+  border-top: 1px solid #e7e7e7;
+}
